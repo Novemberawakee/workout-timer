@@ -1,0 +1,104 @@
+body {
+    background: linear-gradient(to bottom, #7f7fd5, #86a8e7, #91eae4);
+    background-color: #86a8e7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-work, #input-rest, #input-rounds {
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+}
+
+#input-rounds {
+    display: flex;
+    flex-direction: column;
+}
+
+#timer {
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+}
+
+.text {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+#countdown {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin: 0;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    padding: 3px;
+    background-color: rgb(255, 255, 255, 0.8);
+    color: #7f7fd5;
+    font-family: 'Poppins', sans-serif;
+}
+
+#inputWorkMin, #inputWorkSec, #inputRestMin, #inputRestSec {
+    width: 45%;
+}
+
+#btn {
+    margin-top: 15px;
+    width: 340px;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255, 0.9);
+    border: none;
+    color: #86a8e7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+@media all and (max-width: 280px) {
+    #container {
+        width: 260px;
+    }
+
+    #input-work, #input-rest, #input-rounds {
+        width: 200px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #timer {
+        width: 200px;
+    }
+
+    #btn {
+        width: 240px;
+    }
+
+    input {
+        width: 85px;
+    }
+}
